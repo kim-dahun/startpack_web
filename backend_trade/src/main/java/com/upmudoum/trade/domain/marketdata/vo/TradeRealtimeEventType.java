@@ -1,0 +1,19 @@
+package com.upmudoum.trade.domain.marketdata.vo;
+
+public enum TradeRealtimeEventType {
+    PRICE,
+    ORDERBOOK,
+    BALANCE,
+    QUOTE_TICK,
+    TRADE_TICK,
+    ORDERBOOK_SNAPSHOT,
+    ORDERBOOK_DELTA,
+    ACCOUNT_BALANCE_CHANGED,
+    POSITION_CHANGED,
+    ORDER_ACCEPTED,
+    ORDER_REJECTED,
+    ORDER_PARTIALLY_FILLED,
+    ORDER_FILLED,
+    WATCHLIST_CHANGED,
+    REALTIME_CONNECTION_STATUS
+}

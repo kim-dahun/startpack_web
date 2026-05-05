@@ -1,0 +1,13 @@
+package com.upmudoum.trade.domain.master.vo;
+
+public enum TradeMasterParserStrategy {
+    DOMESTIC_STOCK_FIXED_WIDTH,
+    DOMESTIC_ELW_FIXED_WIDTH,
+    DOMESTIC_BOND_FIXED_WIDTH,
+    PIPE_DELIMITED_MASTER,
+    TAB_DELIMITED_MASTER,
+    OVERSEAS_STOCK_TAB,
+    SECTOR_FIXED_WIDTH,
+    THEME_FIXED_WIDTH,
+    NOT_IMPLEMENTED
+}
