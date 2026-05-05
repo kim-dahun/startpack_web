@@ -1,87 +1,53 @@
-import CodeGroupsMain from '@/pages/user/code-groups/Main.vue'
-import CodesMain from '@/pages/user/codes/Main.vue'
-import DepartmentsMain from '@/pages/user/departments/Main.vue'
-import GroupMembersMain from '@/pages/user/group-members/Main.vue'
-import GroupsMain from '@/pages/user/groups/Main.vue'
-import JobGradesMain from '@/pages/user/job-grades/Main.vue'
-import MenuPermissionsMain from '@/pages/user/menu-permissions/Main.vue'
-import MenusMain from '@/pages/user/menus/Main.vue'
-import PositionsMain from '@/pages/user/positions/Main.vue'
-import ServiceAccessesMain from '@/pages/user/service-accesses/Main.vue'
-import UserPositionsMain from '@/pages/user/user-positions/Main.vue'
-import UsersMain from '@/pages/user/users/Main.vue'
 import { routeMetaMap } from '@/router/routes'
-export const adminRoutes = [
+
+
+export const tradeRoutes = [
     {
-        path: 'users',
-        name: 'users',
-        component: UsersMain,
-        meta: routeMetaMap.users,
+        path: 'trade/accounts',
+        name: 'accounts',
+        component: () => import('@/pages/trade/account/Main.vue'),
+        meta: routeMetaMap.accounts,
     },
     {
-        path: 'departments',
-        name: 'departments',
-        component: DepartmentsMain,
-        meta: routeMetaMap.departments,
+        path: 'trade/items',
+        name: 'items',
+        component: () => import('@/pages/trade/item/Main.vue'),
+        meta: routeMetaMap.items,
     },
     {
-        path: 'job-grades',
-        name: 'jobGrades',
-        component: JobGradesMain,
-        meta: routeMetaMap.jobGrades,
+        path: 'trade/watchlist',
+        name: 'watchlist',
+        component: () => import('@/pages/trade/watchlist/Main.vue'),
+        meta: routeMetaMap.watchlist,
     },
     {
-        path: 'positions',
-        name: 'positions',
-        component: PositionsMain,
-        meta: routeMetaMap.positions,
+        path: 'trade/realtime',
+        name: 'realtime',
+        component: () => import('@/pages/trade/market/Main.vue'),
+        meta: routeMetaMap.realtime,
     },
     {
-        path: 'user-positions',
-        name: 'userPositions',
-        component: UserPositionsMain,
-        meta: routeMetaMap.userPositions,
+        path: 'trade/analysis',
+        name: 'tradeAnalysis',
+        component: () => import('@/pages/trade/analysis/Main.vue'),
+        meta: {
+            menuUrl: '/trade/analysis',
+        },
     },
     {
-        path: 'service-accesses',
-        name: 'serviceAccesses',
-        component: ServiceAccessesMain,
-        meta: routeMetaMap.serviceAccesses,
+        path: 'trade/ops',
+        name: 'tradeOps',
+        component: () => import('@/pages/trade/ops/Main.vue'),
+        meta: {
+            menuUrl: '/trade/ops',
+        },
     },
     {
-        path: 'groups',
-        name: 'groups',
-        component: GroupsMain,
-        meta: routeMetaMap.groups,
-    },
-    {
-        path: 'group-members',
-        name: 'groupMembers',
-        component: GroupMembersMain,
-        meta: routeMetaMap.groupMembers,
-    },
-    {
-        path: 'menus',
-        name: 'menus',
-        component: MenusMain,
-        meta: routeMetaMap.menus,
-    },
-    {
-        path: 'menu-permissions',
-        name: 'menuPermissions',
-        component: MenuPermissionsMain,
-        meta: routeMetaMap.menuPermissions,
-    },
-    {
-        path: 'code-groups',
-        name: 'codeGroups',
-        component: CodeGroupsMain,
-        meta: routeMetaMap.codeGroups,
-    },
-    {
-        path: 'codes',
-        name: 'codes',
-        component: CodesMain,
-        meta: routeMetaMap.codes,
+        path: 'trade/masters',
+        name: 'masters',
+        component: () => import('@/pages/trade/masters/Main.vue'),
+        meta: {
+            menuUrl: '/trade/masters',
+        },
     },
 ]
