@@ -1,0 +1,18 @@
+export {
+  applyApprovalLineTemplate,
+  approveApproval,
+  createApproval,
+  createApprovalLineTemplate,
+  deleteApproval,
+  deleteApprovalLineTemplate,
+  getApprovalActions,
+  getApprovalLines,
+  listApprovalLineTemplates,
+  listApprovals,
+  listDirectoryUsers,
+  rejectApproval,
+  searchApprovals,
+  submitApproval,
+  updateApproval,
+  updateApprovalLineTemplate,
+} from '@/api/modules/groupware'
